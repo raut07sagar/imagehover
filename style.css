@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(167, 167, 167);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.pannel {
+  position: relative;
+  width: 60px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: block;
+}
+.pannel {
+  transition: width 0.5s ease-in-out;
+}
+
+.data1 {
+  position: absolute;
+  top: 50%;
+  width: 18rem;
+  background-color: #e78d6c;
+  margin: 0 0.5rem 0 0.5rem;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+
+  -webkit-transition:  opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.data1:hover{
+ 
+    opacity: 0.7; 
+}
+
+.data2 {
+  position: absolute;
+  top: 55%;
+  left: 90%;
+  width: auto;
+  margin: 0 0.5rem 0 0.5rem;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(7, 7, 7);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+ 
+
+
+  -webkit-transition:  opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.data2:hover{
+ 
+    opacity: 0.7; 
+}
+.data2:hover{
+  writing-mode: horizontal-tb;
+  text-orientation: upright;
+}
+
+
+.data3 {
+  position: absolute;
+  top: 62%;
+  left: 130%;
+  width: auto;
+  margin: 0 0.5rem 0 0.5rem;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(7, 7, 7);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+ -webkit-transition:  opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.data3:hover{
+  writing-mode: horizontal-tb;
+  text-orientation: upright;
+}
+
+
+
+
+.pannel:hover {
+  width: 300px;
+}
+
+
+
+.pannel.active{
+  width: 300px ;
+}
